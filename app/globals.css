@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: dark; }
+:root { color-scheme: light; }
 html { scroll-behavior: smooth; }
-body { background: #071426; color: #fff; }
-:focus-visible { outline: 2px solid #19B8FF; outline-offset: 3px; border-radius: 6px; }
+body { background: #F0F1ED; color: #141510; }
+:focus-visible { outline: 2px solid #899E12; outline-offset: 3px; border-radius: 6px; }
 
 @layer components {
   .container-x { @apply mx-auto w-full max-w-7xl px-5 sm:px-8; }
   .btn { @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition duration-300; }
-  .btn-primary { @apply bg-electric text-white hover:bg-cyan hover:shadow-glow; }
-  .btn-ghost { @apply border border-white/20 text-white hover:border-cyan hover:text-cyan; }
+  .btn-primary { @apply bg-electric text-slate hover:bg-cyan hover:shadow-glow; }
+  .btn-ghost { @apply border border-slate/20 text-slate hover:border-slate hover:bg-slate/5; }
 }
 
 /* Hero orb + entrance: the one orchestrated motion moment. Off under reduced-motion. */
@@ -29,6 +29,19 @@ body { background: #071426; color: #fff; }
 }
 
 @layer components {
-  .input { @apply w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-muted/70 focus:border-cyan; }
+  .input { @apply w-full rounded-xl border border-slate/15 bg-white px-4 py-3 text-sm text-slate placeholder:text-muted focus:border-cyan; }
   .input option { color: #101C2D; }
 }
+
+[class~="text-white"] { color: #141510; }
+[class~="text-white/80"] { color: rgb(20 21 16 / 80%); }
+[class~="text-white/60"] { color: rgb(20 21 16 / 60%); }
+[class~="text-white/50"] { color: rgb(20 21 16 / 50%); }
+[class~="border-white/10"],
+[class~="border-white/15"],
+[class~="border-white/20"] { border-color: rgb(20 21 16 / 12%); }
+[class~="divide-white/10"] > :not([hidden]) ~ :not([hidden]) { border-color: rgb(20 21 16 / 12%); }
+[class~="bg-white/[0.04]"] { background-color: rgb(20 21 16 / 3%); }
+[class~="bg-white/5"] { background-color: rgb(20 21 16 / 4%); }
+[class~="bg-white/10"] { background-color: rgb(20 21 16 / 8%); }
+[class~="hover:text-white"]:hover { color: #141510; }
