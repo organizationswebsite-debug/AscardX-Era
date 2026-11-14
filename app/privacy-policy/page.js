@@ -1,0 +1,3 @@
+import Legal from '@/components/Legal';
+export const metadata = { title: 'Privacy Policy' };
+export default function P() { return <Legal title="Privacy Policy" sections={[['Who we are', '[Legal company name], part of Moaz Group of Companies, operates this website. Contact: [privacy email].'], ['Information we collect', 'Information you submit through our contact, quote and career forms: name, email, phone, company, project details and, for applications, your CV.'], ['How we use it', 'To respond to your inquiry, assess projects and process applications. We do not sell your information.'], ['Retention and your rights', '[Retention period]. You may request access, correction or deletion by contacting [privacy email].'], ['Cookies', 'See our Cookie Policy.']]} />; }

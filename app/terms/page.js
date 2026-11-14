@@ -1,0 +1,3 @@
+import Legal from '@/components/Legal';
+export const metadata = { title: 'Terms and Conditions' };
+export default function T() { return <Legal title="Terms and Conditions" sections={[['Use of this website', 'By using this website you agree to these terms. Content is provided for general information.'], ['Services', 'Services are provided under a separate written agreement or proposal. Website content is not an offer or guarantee of outcomes.'], ['Intellectual property', 'Website content belongs to [Legal company name] unless stated otherwise.'], ['Limitation of liability', '[To be completed with legal advice.]'], ['Governing law', '[Jurisdiction]']]} />; }
