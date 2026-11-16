@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function PageHero({ title, text, children }) {
   return (
-    <section className="bg-[radial-gradient(ellipse_at_80%_0%,#0B2D59_0%,#071426_65%)] pb-16 pt-36 sm:pt-44">
+    <section className="bg-[radial-gradient(ellipse_at_80%_0%,#E5EBC8_0%,#F0F1ED_65%)] pb-16 pt-36 sm:pt-44">
       <div className="container-x">
         <h1 className="max-w-3xl font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">{title}</h1>
         {text && <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">{text}</p>}
@@ -50,12 +50,12 @@ export function Grid({ children, cols = 3 }) {
 export function CTA({ title = 'Have an Idea? Let’s Turn It Into Reality.', text = 'Let’s discuss how technology can help your business move forward.' }) {
   return (
     <section className="container-x py-20">
-      <div className="rounded-[20px] border border-white/10 bg-gradient-to-br from-deep to-navy p-10 sm:p-14">
+      <div className="rounded-[20px] bg-cyan p-10 text-slate sm:p-14">
         <h2 className="max-w-xl font-display text-3xl font-bold tracking-tight">{title}</h2>
-        <p className="mt-4 text-muted">{text}</p>
+        <p className="mt-4 text-slate/75">{text}</p>
         <div className="mt-8 flex flex-wrap gap-3">
-          <Link href="/get-a-quote" className="btn btn-primary">Start a Project</Link>
-          <Link href="/contact" className="btn btn-ghost">Contact Our Team</Link>
+          <Link href="/get-a-quote" className="btn bg-slate text-mist transition hover:bg-slate/90">Start a Project</Link>
+          <Link href="/contact" className="btn border border-slate/25 text-slate transition hover:bg-slate/5">Contact Our Team</Link>
         </div>
       </div>
     </section>

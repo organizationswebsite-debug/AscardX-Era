@@ -9,7 +9,7 @@ export default function ServicesGrid() {
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((s) => (
             <li key={s.slug}>
-              <Link href={`/services/${s.slug}`} className="group block h-full rounded-[20px] border border-slate/10 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-electric hover:shadow-[0_16px_40px_-16px_rgba(8,102,232,.45)]">
+              <Link href={`/services/${s.slug}`} className="group block h-full rounded-[20px] border border-slate/10 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-electric hover:shadow-[0_16px_40px_-16px_rgba(151,177,20,.32)]">
                 <h3 className="font-display text-lg font-semibold">{s.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate/70">{s.blurb}</p>
                 <span className="mt-6 inline-block text-sm font-semibold text-electric group-hover:underline">Learn more</span>

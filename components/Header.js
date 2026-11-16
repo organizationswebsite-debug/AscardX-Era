@@ -28,7 +28,7 @@ export default function Header() {
   const active = (href) => (href === '/' ? path === '/' : path.startsWith(href));
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition duration-300 ${scrolled || open ? 'border-b border-white/10 bg-ink/90 backdrop-blur-lg' : 'bg-transparent'}`}>
+    <header className={`fixed inset-x-0 top-0 z-50 transition duration-300 ${scrolled || open ? 'border-b border-slate/10 bg-ink/90 backdrop-blur-lg' : 'bg-transparent'}`}>
       <div className="container-x flex h-[72px] items-center justify-between">
         <Link href="/" aria-label="AscardX Era home"><Logo /></Link>
 
@@ -60,9 +60,9 @@ export default function Header() {
           <Link href="/get-a-quote" className="btn btn-primary hidden sm:inline-flex">Get a Quote</Link>
           <button type="button" className="flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-full border border-white/15 xl:hidden"
             aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} aria-controls="mobile-nav" onClick={() => setOpen(!open)}>
-            <span className={`h-0.5 w-5 bg-white transition ${open ? 'translate-y-2 rotate-45' : ''}`} />
-            <span className={`h-0.5 w-5 bg-white transition ${open ? 'opacity-0' : ''}`} />
-            <span className={`h-0.5 w-5 bg-white transition ${open ? '-translate-y-2 -rotate-45' : ''}`} />
+            <span className={`h-0.5 w-5 bg-slate transition ${open ? 'translate-y-2 rotate-45' : ''}`} />
+            <span className={`h-0.5 w-5 bg-slate transition ${open ? 'opacity-0' : ''}`} />
+            <span className={`h-0.5 w-5 bg-slate transition ${open ? '-translate-y-2 -rotate-45' : ''}`} />
           </button>
         </div>
       </div>
